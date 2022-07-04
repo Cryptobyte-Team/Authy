@@ -1,4 +1,4 @@
-name: 'Test main'
+name: 'Test'
 on:
   push:
     branches:
@@ -10,12 +10,12 @@ on:
 
 jobs:
   backend:
-    name: 'Test Backend'
+    name: Test API
     runs-on: ubuntu-latest
 
     steps:
 
-    - name: Checkout source code
+    - name: Checkout Source Code
       uses: actions/checkout@v2
 
     - uses: actions/setup-node@v2
@@ -24,7 +24,7 @@ jobs:
         cache: 'yarn'
         cache-dependency-path: yarn.lock
 
-    - name: Install dependencies
+    - name: Install Dependencies
       run: yarn install
 
     - name: Start MongoDB
@@ -32,11 +32,11 @@ jobs:
       with:
         mongodb-version: '5.0'
 
-    - name: Test Backend
-      run: yarn test
-
-    - name: Lint Codebase
+    - name: Lint
       run: yarn lint
 
-    - name: Build Backend
+    - name: Build
       run: yarn build
+
+    - name: Test
+      run: yarn test
