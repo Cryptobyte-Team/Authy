@@ -53,7 +53,7 @@ if (process.env.NODE_ENV !== 'test') {
   });
 
 } else {
-  serv = app.listen(port, () => console.info(`Listening @ http://localhost:${port}`));
+  serv = app.listen(port);
 }
 
 const stop = async(): Promise<void> => {
