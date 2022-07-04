@@ -13,11 +13,7 @@ Authy is a simple template for user authentication in NodeJS using modern toolin
 - Typed Requests on top of Express
 - TypeScript Request Body Validation via DTO's
 
-<br />
-
 ---
-
-<br />
 
 ## REST API
 This template is a REST API that can be built on to create systems that require user authentication. As a result the built in endpoints are fairly sparse and only cover what is required for the core template functionality. All endpoints are designed to recieve and respond with JSON data. Since the API is simple, we've included the API documentation here.
