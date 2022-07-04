@@ -3,7 +3,6 @@ import http from 'http';
 import express from 'express';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
-import { exit } from 'process';
 
 // Routes
 import routes from './routes';
@@ -57,9 +56,9 @@ if (process.env.NODE_ENV !== 'test') {
   serv = app.listen(port, () => console.info(`Listening @ http://localhost:${port}`));
 }
 
-const stop = (): void => {
+const stop = async(): Promise<void> => {
   if (serv) {
-    serv.close();
+    await serv.close();
   }
 };
 
