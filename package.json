@@ -4,8 +4,9 @@
   "description": "NodeJS Authentication Template",
   "main": "dist/app.js",
   "scripts": {
-    "start": "tsc && node dist/app.js",
+    "build": "tsc",
     "lint": "eslint . --ext .ts",
+    "start": "tsc && node dist/app.js",
     "test": "NODE_ENV='test' DATA='mongodb://127.0.0.1:27017/Authy-Test' JWT_SECRET='=BFtVt5RdYSh5n_p' jest"
   },
   "keywords": [
