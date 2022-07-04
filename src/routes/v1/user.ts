@@ -52,7 +52,7 @@ router.post('/signup', rateLimits.high, validateBody(AuthDto), async(req: TypedR
   const hash = await passwordHash(password);
   const user = new User({
     email,
-    password: hash,
+    password: hash
   });
 
   const saved = await user.save();
