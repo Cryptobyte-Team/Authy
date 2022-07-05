@@ -1,12 +1,18 @@
 import mongoose from 'mongoose';
 
 interface IUser {
-  email: string,
+  email: string
+  emailCode?: string
+  emailCodeDate?: Date
+  emailVerified: boolean
   password: string
 }
 
 interface UserDoc extends mongoose.Document {
-  email: string,
+  email: string
+  emailCode?: string
+  emailCodeDate?: Date
+  emailVerified: boolean
   password: string
 }
 
@@ -17,7 +23,14 @@ interface UserModelInterface extends mongoose.Model<UserDoc> {
 const UserSchema = new mongoose.Schema({
   email: {
     type: String,
+    unique: true,
     required: true
+  },
+  emailCode: String,
+  emailCodeDate: Date,
+  emailVerified: {
+    type: Boolean,
+    default: false
   },
   password: {
     type: String,

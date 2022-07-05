@@ -6,12 +6,14 @@ Authy is a simple template for user authentication in NodeJS using modern toolin
 - Common Password List Lookup
 - Rate Limiting
 - Deep Email Validation (MX Records, SMTP Lookup, Disposable Check) via [deep-email-validator](https://github.com/mfbx9da4/deep-email-validator)
+- Email verification with code
 
 **Developer Features**
 - MongoDB 
 - TypeScript 
 - Typed Requests on top of Express
 - TypeScript Request Body Validation via DTO's
+- Configurable Email Services
 
 ---
 
