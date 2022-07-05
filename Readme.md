@@ -17,6 +17,43 @@ Authy is a simple template for user authentication in NodeJS using modern toolin
 
 ---
 
+## Using Authy
+1. Click the green ["Use this template" button](https://github.com/Cryptobyte-Team/Authy/generate) above!
+
+**OR**
+
+1. Install [Node, NPM](https://nodejs.dev)
+2. Install [Yarn](https://yarnpkg.com)
+3. Clone the project
+   ```bash
+   git clone https://github.com/Cryptobyte-Team/Authy.git
+   ```
+4. Install Dependencies
+   ```bash
+   cd Authy && yarn
+   ```
+5. Configure [`.env`](.env.template)
+   ```bash
+   # Create env from template
+   cp .env.template .env
+
+   # Edit the new .env file with your variables
+   ```
+
+---
+
+## Contributing
+As an authentication template, the work is never truly complete and requires consistent updates. We welcome any and all contributions from developers who want to add features, fix issues or create new components within the platform. We ask that all contributions follow some simple contribution guidelines so that we can ensure a smooth experience for everyone.
+
+- Use a similar code style as what exists within the project
+- Refactor your code to be clean, concise and easy to read
+- Test any and all changes manually before submitting a pull request
+- Use the feature branch workflow ie. create a branch for your work, work and then create a pull request for us to review
+- All tests must pass in order for your pull request to be reviewed
+- All pull requests must be approved before being merged
+
+---
+
 ## REST API
 This template is a REST API that can be built on to create systems that require user authentication. As a result the built in endpoints are fairly sparse and only cover what is required for the core template functionality. All endpoints are designed to recieve and respond with JSON data. Since the API is simple, we've included the API documentation here.
 ```json
