@@ -15,7 +15,7 @@ import { generateAuthToken } from '../../utils/jwt';
 import { validateBody, validateEmail } from '../../utils/validator';
 import { rateLimits } from '../../utils/limiter';
 import { TypedRequest } from '../../types/TypedRequest';
-import { mailer } from '../../utils/Email';
+import { mailer } from '../../utils/email';
 
 const router: Router = express.Router();
 
