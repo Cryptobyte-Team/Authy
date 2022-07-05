@@ -1,6 +1,6 @@
 {
   "name": "authy",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "NodeJS Authentication Template",
   "main": "dist/app.js",
   "scripts": {
